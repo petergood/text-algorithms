@@ -6,6 +6,9 @@ class Node:
         self.link = None
         self.depth = 0
 
+    def get_val(self):
+        return self.val
+
     def add_child(self, node):
         self.children[node.val] = node
         node.parent = self
